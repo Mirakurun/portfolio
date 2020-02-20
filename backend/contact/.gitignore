@@ -1,0 +1,11 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# Config directories
+config/*
+!config/example.config.js
+!config/example.env.yml
