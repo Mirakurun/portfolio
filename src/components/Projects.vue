@@ -99,6 +99,8 @@ export default {
           title: 'AWS Lambda SES S3 Email Forwarder',
           description: 'Forward emails from S3 with Lambda and SES',
           stack: ['JavaScript', 'Node', 'AWS'],
+          github:
+            'https://github.com/Mirakurun/aws-lambda-ses-s3-email-forwarder',
         },
         {
           title: 'Calculator',
