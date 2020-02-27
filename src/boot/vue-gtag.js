@@ -1,6 +1,5 @@
 import VueGtag from 'vue-gtag';
 
-// "async" is optional
 export default async ({ router, Vue }) => {
   Vue.use(
     VueGtag,
