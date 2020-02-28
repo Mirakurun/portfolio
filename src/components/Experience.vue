@@ -95,7 +95,7 @@ export default {
               subtitle: [new Date(2008, 9), new Date(2010, 7)], // October 2008 to August 2010
               location: 'Monterey Park, CA',
               description: [
-                'Assisted students, faculty, and staff with use of hardware and software aplications.',
+                'Assisted students, faculty, and staff with use of hardware and software applications.',
                 'Coordinated the use of the lab equipment and facilities.',
                 'Assigned lab computers for students.',
               ],
