@@ -80,7 +80,7 @@ export default {
               subtitle: [new Date(2012, 7), new Date(2013, 4)], // August 2012 to May 2013
               location: 'Long Beach, CA',
               description: [
-                'Assisted IT Mananger on completing helpdesk tickets and various IT projects.',
+                'Assisted IT Manager on completing helpdesk tickets and various IT projects.',
                 'Deployed and reimaged hundreds of desktop computers utilizing Windows Deployment Services.',
                 'Installed Digital Signage flat panel touchscreens at Student Recreational Wellness Center.',
               ],
