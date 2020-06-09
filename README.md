@@ -1,3 +1,5 @@
+![SPA Continuous Deployment](https://github.com/Mirakurun/portfolio/workflows/SPA%20Continuous%20Deployment/badge.svg)
+
 # Portfolio
 
 My Web Developer Portfolio
