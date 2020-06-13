@@ -31,10 +31,12 @@ jobs:
           sudo ./aws/install
       - name: Build
         run: npm run build
-      - name: Deploy
+      - name: Deploy SPA
         env:
           BUCKET: ${{ secrets.BUCKET }}
         run: aws s3 sync ./dist/spa s3://$BUCKET --acl public-read --delete --exclude 'apps/*'
+      - name: Deploy robots.txt
+        run: aws s3 cp ./src/robots.txt s3://$BUCKET --acl public-read
       - name: Invalidate CloudFront Cache
         env:
           DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
