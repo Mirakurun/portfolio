@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - 'src/**'
+      - '.github/workflows/spa-cd.yml'
 
 jobs:
   deploy:
@@ -15,6 +16,8 @@ jobs:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      BUCKET: ${{ secrets.BUCKET }}
+      DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -32,12 +35,8 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy SPA
-        env:
-          BUCKET: ${{ secrets.BUCKET }}
         run: aws s3 sync ./dist/spa s3://$BUCKET --acl public-read --delete --exclude 'apps/*'
       - name: Deploy robots.txt
         run: aws s3 cp ./src/robots.txt s3://$BUCKET --acl public-read
       - name: Invalidate CloudFront Cache
-        env:
-          DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
         run: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/index.html" "/css/*" "/fonts/*" "/js/*" "/statics/*"
