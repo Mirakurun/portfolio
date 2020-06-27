@@ -50,7 +50,7 @@ export default {
           heading: 'Clearpoint Credit Counseling Solutions',
           titles: [
             {
-              title: 'System Support Analyst',
+              title: 'Senior System Support Analyst',
               subtitle: [new Date(2016, 5), new Date(2016, 11)], // June 2016 to December 2016
               location: 'Commerce, CA',
               description: [
