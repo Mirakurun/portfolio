@@ -43,15 +43,16 @@
               <li>Technologies/Tools</li>
               <ul class="text-body1 text-grey-14" style="list-style-type: none">
                 <li>
-                  Bootstrap, Vue.js, Quasar Framework, Node.js, Express.js,
-                  MongoDB, Git, Jest, Serverless Framework
+                  Vue.js, Quasar Framework, Node.js, Express.js, MongoDB,
+                  FireStore, jQuery, Bootstrap, Jest, Passport.js, Git, Github
+                  Actions, JWT, Serverless Framework
                 </li>
               </ul>
               <li>Cloud Platforms</li>
               <ul class="text-body1 text-grey-14" style="list-style-type: none">
                 <li>
-                  Amazon Web Services (S3, CloudFront, API Gateway, Lambda,
-                  SES), MongoDB Atlas
+                  Amazon Web Services (CLI, EC2, Route53, S3, CloudFront,
+                  Lambda, API Gateway, SES, CloudWatch, IAM, ACM), MongoDB Atlas
                 </li>
               </ul>
             </ul>
@@ -192,6 +193,33 @@ export default {
           gutter: true,
         },
         {
+          text: 'AWS CLI',
+          textStyle: { 'margin-top': '8px' },
+          icon: false,
+          qicon: 'img:statics/images/AWS-Command-Line-Interface.svg',
+          qimage: false,
+          style: false,
+          gutter: false,
+        },
+        {
+          text: 'Route 53',
+          textStyle: { 'margin-top': '8px' },
+          icon: false,
+          qicon: 'img:statics/images/Amazon-Route-53.svg',
+          qimage: false,
+          style: false,
+          gutter: false,
+        },
+        {
+          text: 'EC2',
+          textStyle: { 'margin-top': '8px' },
+          icon: false,
+          qicon: 'img:statics/images/Amazon-EC2.svg',
+          qimage: false,
+          style: false,
+          gutter: false,
+        },
+        {
           text: 'Simple Storage Service (S3)',
           textStyle: { 'margin-top': '8px' },
           icon: false,
@@ -236,13 +264,41 @@ export default {
           style: false,
           gutter: false,
         },
+        {
+          text: 'CloudWatch',
+          textStyle: { 'margin-top': '8px' },
+          icon: false,
+          qicon: 'img:statics/images/Amazon-CloudWatch.svg',
+          qimage: false,
+          style: false,
+          gutter: false,
+        },
+        {
+          text: 'IAM',
+          textStyle: { 'margin-top': '8px' },
+          icon: false,
+          qicon:
+            'img:statics/images/AWS-Identity-and-_Access-Management_IAM.svg',
+          qimage: false,
+          style: false,
+          gutter: false,
+        },
+        {
+          text: 'ACM',
+          textStyle: { 'margin-top': '8px' },
+          icon: false,
+          qicon: 'img:statics/images/AWS-Certificate-Manager.svg',
+          qimage: false,
+          style: false,
+          gutter: false,
+        },
       ],
     };
   },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .fab,
 .fas,
 .far,
