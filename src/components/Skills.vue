@@ -52,7 +52,8 @@
               <ul class="text-body1 text-grey-14" style="list-style-type: none">
                 <li>
                   Amazon Web Services (CLI, EC2, Route53, S3, CloudFront,
-                  Lambda, API Gateway, SES, CloudWatch, IAM, ACM), MongoDB Atlas
+                  Lambda, API Gateway, SES, CloudWatch, IAM, ACM), MongoDB
+                  Atlas, MJML, Supertest
                 </li>
               </ul>
             </ul>
