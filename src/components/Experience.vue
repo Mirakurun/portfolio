@@ -54,9 +54,9 @@ export default {
               subtitle: [new Date(2016, 5), new Date(2016, 11)], // June 2016 to December 2016
               location: 'Commerce, CA',
               description: [
-                'Lead implementation of TASKE Contact, a contact center call management software allowing supervisors and agents to manage call activity.',
-                'Supervised McAfee ePolicy Orchestrator migration and Host Intrusion Prevention deployment to alleviate ransomware malware.',
-                'Automated patching and software deployments with Manage Engine Desktop Central by creating scripts and packages.',
+                'Led help desk team on troubleshooting computer technical issues and integrating information technology solutions.',
+                'Supervised “McAfee ePolicy Orchestrator” server migration and “McAfee Host Intrusion Prevention” software deployment to alleviate widespread ransomware malware.',
+                'Automated software deployments and security software update patching with “Manage Engine Desktop Central”.',
               ],
             },
             {
@@ -64,9 +64,9 @@ export default {
               subtitle: [new Date(2014, 1), new Date(2016, 5)], // February 2014 to June 2016
               location: 'Commerce, CA',
               description: [
-                'Served as the primary IT specialist for the west coast region.',
-                'Collaborated on post-merger project migrating Microsoft Exchange to Office 365.',
-                'Provisioned VMware virtual desktops and servers.',
+                'Managed desktops and servers in a Windows and VMware environment.',
+                'Migrated “Microsoft Exchange” email server to Office 365.',
+                'Directed integration of “TASKE Contact” software into Cisco UCM and UCCX.',
               ],
             },
           ],
@@ -80,9 +80,9 @@ export default {
               subtitle: [new Date(2012, 7), new Date(2013, 4)], // August 2012 to May 2013
               location: 'Long Beach, CA',
               description: [
-                'Assisted IT Manager on completing helpdesk tickets and various IT projects.',
-                'Deployed and reimaged hundreds of desktop computers utilizing Windows Deployment Services.',
-                'Installed Digital Signage flat panel touchscreens at Student Recreational Wellness Center.',
+                'Maintained local computer network.',
+                'Deployed desktop computers and reimaged desktops.',
+                'Installed digital signage touch screens at the Student Recreation and Wellness Center.',
               ],
             },
           ],
@@ -94,11 +94,7 @@ export default {
               title: 'Computer Assisted Instruction Lab Technician',
               subtitle: [new Date(2008, 9), new Date(2010, 7)], // October 2008 to August 2010
               location: 'Monterey Park, CA',
-              description: [
-                'Assisted students, faculty, and staff with use of hardware and software applications.',
-                'Coordinated the use of the lab equipment and facilities.',
-                'Assigned lab computers for students.',
-              ],
+              description: ['Provided help desk support.'],
             },
           ],
         },

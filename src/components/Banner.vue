@@ -22,8 +22,7 @@
             label="resume"
             size="lg"
             type="a"
-            href="statics/resume/resume.pdf"
-            download
+            href="https://docs.google.com/document/d/1hpoYpobBC4w1p9xURMy7zmvgCx0qxREJGIW8m8veV-A/export?format=pdf"
           />
         </div>
       </div>
