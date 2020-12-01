@@ -43,16 +43,9 @@
               <li>Technologies/Tools</li>
               <ul class="text-body1 text-grey-14" style="list-style-type: none">
                 <li>
-                  Vue.js, Quasar Framework, Node.js, Express.js, MongoDB,
-                  FireStore, jQuery, Bootstrap, Jest, Passport.js, Git, Github
-                  Actions, JWT, Serverless Framework, MJML, Supertest
-                </li>
-              </ul>
-              <li>Cloud Platforms</li>
-              <ul class="text-body1 text-grey-14" style="list-style-type: none">
-                <li>
-                  Amazon Web Services (CLI, EC2, Route53, S3, CloudFront,
-                  Lambda, API Gateway, SES, CloudWatch, IAM, ACM), MongoDB Atlas
+                  AWS, Vue.js, Node.js, Express, MongoDB, Jest, Git, GitHub
+                  Actions, Serverless Framework, Windows Server, VMware (ESXi,
+                  vCenter, vSphere, View)
                 </li>
               </ul>
             </ul>
