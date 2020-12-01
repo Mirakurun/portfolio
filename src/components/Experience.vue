@@ -112,6 +112,9 @@ export default {
   },
   methods: {
     formatDates(start, end) {
+      if (typeof end === 'string') {
+        return `${format(start, 'MMMM yyyy')} — Current}`;
+      }
       return `${format(start, 'MMMM yyyy')} — ${format(end, 'MMMM yyyy')}`;
     },
   },
