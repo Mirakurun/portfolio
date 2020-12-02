@@ -49,7 +49,7 @@ export default {
           titles: [
             {
               title: 'Caregiver',
-              subtitle: [new Date(2016, 5), 'Current'],
+              subtitle: [new Date(2016, 5), 'Present'],
               location: 'Monterey Park, CA',
               description: ['Time off due to family circumstances.'],
             },
