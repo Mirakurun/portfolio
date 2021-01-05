@@ -9,7 +9,7 @@
   "author": "Mirakurun <25449974+Mirakurun@users.noreply.github.com>",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "aws-sdk": "^2.619.0",
