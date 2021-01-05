@@ -5,21 +5,23 @@
       <div class="q-px-lg">
         <q-timeline>
           <template v-for="(position, index) in positions">
-            <q-timeline-entry :key="index" class="text-grey-9" tag="h5" heading>
-              {{ position.heading }}
+            <q-timeline-entry :key="index" tag="h5" heading>
+              <div class="text-dark text-weight-medium">
+                {{ position.heading }}
+              </div>
             </q-timeline-entry>
             <q-timeline-entry
               v-for="title in position.titles"
-              :key="title.title"
+              :key="title.description[0]"
             >
               <template #subtitle>
-                <div>
+                <div class="text-capitalize">
                   {{ formatDates(title.subtitle[0], title.subtitle[1]) }}
                 </div>
-                <div>{{ title.location }}</div>
+                <div class="text-capitalize">{{ title.location }}</div>
               </template>
               <template #title>
-                <div class="text-grey-10">{{ title.title }}</div>
+                <div class="text-dark">{{ title.title }}</div>
               </template>
               <div class="text-body1 text-grey-14">
                 <ul style="list-style-type: disc">
@@ -45,13 +47,18 @@ export default {
     return {
       positions: [
         {
-          heading: 'Time off',
+          heading: 'Self-employed',
           titles: [
             {
-              title: 'Caregiver',
-              subtitle: [new Date(2016, 5), 'Present'],
+              title: 'Family Caregiver',
+              subtitle: [new Date(2017, 0), 'Present'],
               location: 'Monterey Park, CA',
-              description: ['Time off due to family circumstances.'],
+              description: [
+                'Manage day to day needs of family member.',
+                'Clean the household environment and prepare meals.',
+                'Schedule medical appointments and provide transportation.',
+                'Shop for supplies and pick up medication.',
+              ],
             },
           ],
         },
@@ -60,19 +67,12 @@ export default {
           titles: [
             {
               title: 'Systems Administrator',
-              subtitle: [new Date(2016, 5), new Date(2016, 11)], // June 2016 to December 2016
+              subtitle: [new Date(2014, 1), new Date(2016, 11)], // June 2016 to December 2016
               location: 'Commerce, CA',
               description: [
                 'Led help desk team on troubleshooting computer technical issues and integrating information technology solutions.',
                 'Supervised anti-virus software deployment to alleviate widespread ransomware malware.',
                 'Automated software deployments and security software patching.',
-              ],
-            },
-            {
-              title: 'Network Administrator',
-              subtitle: [new Date(2014, 1), new Date(2016, 5)], // February 2014 to June 2016
-              location: 'Commerce, CA',
-              description: [
                 'Managed virtual machines in a Windows and VMware environment.',
                 'Migrated “Microsoft Exchange” email server to Office 365.',
                 'Directed integration of contact center software into Cisco UCM and UCCX.',
@@ -113,9 +113,9 @@ export default {
   methods: {
     formatDates(start, end) {
       if (typeof end === 'string') {
-        return `${format(start, 'MMMM yyyy')} — Current`;
+        return `${format(start, 'MMM yyyy')} — Present`;
       }
-      return `${format(start, 'MMMM yyyy')} — ${format(end, 'MMMM yyyy')}`;
+      return `${format(start, 'MMM yyyy')} — ${format(end, 'MMM yyyy')}`;
     },
   },
 };

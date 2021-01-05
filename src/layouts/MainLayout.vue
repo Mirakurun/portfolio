@@ -70,7 +70,7 @@
               Kevin Chhay
             </q-item-label>
             <q-item-label class="text-subtitle2 text-info ubuntu-mono">
-              Web Developer
+              Software Engineer
             </q-item-label>
           </q-item-section>
           <q-item-section side>
@@ -146,6 +146,11 @@ export default {
           title: 'Education',
           icon: 'fas fa-graduation-cap fa-fw',
           id: 'education',
+        },
+        {
+          title: 'Certifications',
+          icon: 'fas fa-award fa-fw',
+          id: 'certification',
         },
         { title: 'Contact', icon: 'fas fa-envelope fa-fw', id: 'contact' },
       ],

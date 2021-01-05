@@ -1,6 +1,6 @@
 <template>
   <div style="background-color: black">
-    <q-parallax src="statics/images/macbook.jpg">
+    <q-parallax src="images/macbook.jpg">
       <div class="q-px-sm q-py-xl">
         <div class="container q-gutter-y-md">
           <div
@@ -13,7 +13,7 @@
             Kevin Chhay
           </div>
           <div class="text-h4 text-info q-mb-lg ubuntu-mono">
-            Web Developer
+            Software Engineer
           </div>
           <q-btn
             outline

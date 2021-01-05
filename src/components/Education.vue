@@ -2,31 +2,26 @@
   <div style="background-color: black">
     <q-parallax
       id="education"
-      src="statics/images/beach.jpg"
+      src="images/beach.jpg"
       :height="educationBoxHeight"
     >
       <div class="q-px-sm q-py-xl">
         <div class="container q-gutter-y-lg">
-          <div class="text-h4 text-white ubuntu-mono">
-            Education
-          </div>
+          <div class="text-h4 text-white ubuntu-mono">Education</div>
           <div class="q-px-lg text-wrap">
             <div
               class="text-h6"
-              style="color: #ecaa00; text-shadow: 0 0 10px black;"
+              style="color: #ecaa00; text-shadow: 0 0 10px black"
             >
-              California State University Long Beach, CA
+              California State University Long Beach
             </div>
             <div
               class="text-subtitle1 text-white"
               style="text-shadow: 0 0 10px #ffda27"
             >
-              Bachelor of Science (B.S.), Management Information Systems,
-              General
+              Bachelor of Science (B.S.), Management Information Systems
             </div>
-            <div style="color: #ffda27">
-              2010 — 2013
-            </div>
+            <div style="color: #ffda27">2010 — 2013</div>
           </div>
         </div>
 

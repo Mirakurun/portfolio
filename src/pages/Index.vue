@@ -15,6 +15,9 @@
     <!-- Education -->
     <education />
 
+    <!-- Ceritifation -->
+    <certification />
+
     <!-- Contact -->
     <contact />
 
@@ -31,6 +34,7 @@ import Skills from 'components/Skills.vue';
 import Projects from 'components/Projects.vue';
 import Experience from 'components/Experience.vue';
 import Education from 'components/Education.vue';
+import Certification from 'components/Certification.vue';
 import Contact from 'components/Contact.vue';
 
 export default {
@@ -41,12 +45,13 @@ export default {
     Projects,
     Experience,
     Education,
+    Certification,
     Contact,
   },
   mounted() {
     particlesJS.load(
       'skills-particles',
-      'statics/config/particlesjs-skills-container-config.json'
+      'config/particlesjs-skills-container-config.json'
     );
   },
 };

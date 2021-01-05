@@ -1,15 +1,13 @@
 module.exports = {
   root: true,
-
   parserOptions: {
     parser: 'babel-eslint',
-    sourceType: 'module'
+    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+    sourceType: 'module', // Allows for the use of imports
   },
-
   env: {
-    browser: true
+    browser: true,
   },
-
   extends: [
     // https://eslint.vuejs.org/rules/#priority-a-essential-error-prevention
     // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
@@ -17,26 +15,20 @@ module.exports = {
     'eslint:recommended',
     'airbnb-base',
     'plugin:prettier/recommended',
-    'prettier/vue'
+    'prettier/vue',
   ],
-
   // required to lint *.vue files
-  plugins: [
-    'vue',
-    'prettier'
-  ],
-
+  plugins: ['vue', 'prettier'],
   globals: {
-    'ga': true, // Google Analytics
-    'cordova': true,
-    '__statics': true,
-    'process': true,
-    'Capacitor': true,
-    'chrome': true,
-    'grecaptcha': true, // Google reCAPTCHA
-    'particlesJS': true,
+    ga: true, // Google Analytics
+    cordova: true,
+    __statics: true,
+    process: true,
+    Capacitor: true,
+    chrome: true,
+    grecaptcha: true, // Google reCAPTCHA
+    particlesJS: true,
   },
-
   // add your custom rules here
   rules: {
     'no-param-reassign': 'off',
@@ -52,10 +44,10 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'prefer-promise-reject-errors': 'off',
 
-    'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'es5' }],
+    'prettier/prettier': ['error', { singleQuote: true }],
     'no-console': 'off',
 
     // allow debugger during development only
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
-  }
-}
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+  },
+};

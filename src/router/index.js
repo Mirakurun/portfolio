@@ -14,7 +14,7 @@ Vue.use(VueRouter);
  * with the Router instance.
  */
 
-export default function(/* { store, ssrContext } */) {
+export default (/* { store, ssrContext } */) => {
   const Router = new VueRouter({
     scrollBehavior(to, from, savedPosition) {
       if (savedPosition) {
@@ -35,4 +35,4 @@ export default function(/* { store, ssrContext } */) {
   });
 
   return Router;
-}
+};

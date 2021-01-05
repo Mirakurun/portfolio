@@ -1,15 +1,9 @@
 <template>
   <div style="background-color: black">
-    <q-parallax
-      id="contact"
-      src="statics/images/tea.jpg"
-      :height="contactBoxHeight"
-    >
+    <q-parallax id="contact" src="images/tea.jpg" :height="contactBoxHeight">
       <div class="q-px-sm q-py-xl">
         <div class="container q-gutter-y-lg">
-          <div class="text-h4 text-white ubuntu-mono">
-            Contact
-          </div>
+          <div class="text-h4 text-white ubuntu-mono">Contact</div>
           <div class="flex flex-center">
             <q-form
               ref="form"

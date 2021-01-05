@@ -35,8 +35,6 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy SPA
-        run: aws s3 sync ./dist/spa s3://$BUCKET --acl public-read --delete --exclude 'apps/*'
-      - name: Deploy robots.txt
-        run: aws s3 cp ./src/robots.txt s3://$BUCKET --acl public-read
+        run: aws s3 sync ./dist/spa s3://$BUCKET --delete --exclude 'apps/*'
       - name: Invalidate CloudFront Cache
-        run: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/index.html" "/css/*" "/fonts/*" "/js/*" "/statics/*"
+        run: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/index.html" "/css/*" "/fonts/*" "/js/*"

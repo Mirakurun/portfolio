@@ -91,9 +91,6 @@ module.exports = function(ctx) {
       },
     },
 
-    // https://quasar.dev/quasar-cli/cli-documentation/supporting-ie
-    supportIE: true,
-
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
       scopeHoisting: true,
@@ -123,12 +120,12 @@ module.exports = function(ctx) {
       },
       env: ctx.dev
         ? {
-            API: JSON.stringify('http://localhost:8080/api'),
-            SITEKEY: JSON.stringify('6LfmtNcUAAAAAMK0N1oZJ43YKabHnpNrmPCBWj_L'),
+            API: 'http://localhost:8080/api',
+            SITEKEY: '6LfmtNcUAAAAAMK0N1oZJ43YKabHnpNrmPCBWj_L',
           }
         : {
-            API: JSON.stringify('https://www.mirakurun.dev/api'),
-            SITEKEY: JSON.stringify('6LfmtNcUAAAAAMK0N1oZJ43YKabHnpNrmPCBWj_L'),
+            API: 'https://www.mirakurun.dev/api',
+            SITEKEY: '6LfmtNcUAAAAAMK0N1oZJ43YKabHnpNrmPCBWj_L',
           },
     },
 
@@ -162,27 +159,27 @@ module.exports = function(ctx) {
         theme_color: '#027be3',
         icons: [
           {
-            src: 'statics/icons/icon-128x128.png',
+            src: 'icons/icon-128x128.png',
             sizes: '128x128',
             type: 'image/png',
           },
           {
-            src: 'statics/icons/icon-192x192.png',
+            src: 'icons/icon-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'statics/icons/icon-256x256.png',
+            src: 'icons/icon-256x256.png',
             sizes: '256x256',
             type: 'image/png',
           },
           {
-            src: 'statics/icons/icon-384x384.png',
+            src: 'icons/icon-384x384.png',
             sizes: '384x384',
             type: 'image/png',
           },
           {
-            src: 'statics/icons/icon-512x512.png',
+            src: 'icons/icon-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },

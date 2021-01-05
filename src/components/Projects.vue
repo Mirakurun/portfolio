@@ -2,14 +2,12 @@
   <div style="background-color: black">
     <q-parallax
       id="projects"
-      src="statics/images/coffee.jpg"
+      src="images/coffee.jpg"
       :height="projectsBoxHeight"
     >
       <div class="q-px-sm q-py-xl">
         <div class="container q-gutter-y-lg">
-          <div class="text-h4 text-white ubuntu-mono">
-            Projects
-          </div>
+          <div class="text-h4 text-white ubuntu-mono">Projects</div>
           <div class="row q-px-lg q-col-gutter-md">
             <div
               v-for="project in projects"
@@ -90,9 +88,11 @@ export default {
       projects: [
         {
           title: 'Emoting Mokou',
-          description: 'An app for tweeting "Emoting Mokou" memes',
+          description:
+            'An app for tweeting "Emoting Mokou" memes. Emoting Mokou is a collection of images featuring the character Mokou from Touhou, Japanese video game series, with Chinese and "Engrish" captions, created by the artist Shangguan Feiying.',
           stack: [
-            'Vue',
+            'Vue.js',
+            'Node.js',
             'Express',
             'MongoDB Atlas',
             'AWS',
@@ -106,9 +106,11 @@ export default {
         },
         {
           title: 'Serverless Invoice',
-          description: 'An invoicing application',
+          description:
+            'Work in progress. An online invoicing application. Send invoice via email. Payment processing powered by Stripe API.',
           stack: [
-            'Vue',
+            'Vue.js',
+            'Node.js',
             'Express',
             'MongoDB Atlas',
             'AWS',
@@ -123,8 +125,9 @@ export default {
         },
         {
           title: 'AWS Lambda SES S3 Email Forwarder',
-          description: 'Forward emails from S3 with Lambda and SES',
-          stack: ['Vue', 'Node', 'AWS', 'Lambda', 'S3', 'SES'],
+          description:
+            'A Node.js Lambda function that utilizes Amazon SES to forward incoming emails to an email address inbox. Setup Amazon SES to receive emails and deliver to a S3 bucket, then invoke lambda to forward the email to your email of choice.',
+          stack: ['Vue', 'Node.js', 'AWS', 'Lambda', 'S3', 'SES'],
           github:
             'https://github.com/Mirakurun/aws-lambda-ses-s3-email-forwarder',
         },
